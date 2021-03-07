@@ -1,0 +1,396 @@
+{
+	"info": {
+		"_postman_id": "2a3f979f-f19c-475c-bea4-c46df3f27b8f",
+		"name": "G2Academy_final_project_java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/MBanking/Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"logout\",\r\n    \"user_id\" : \"dandelion7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/BalanceInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"balance info\",\r\n    \"user_id\" : \"dandelion7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/BalanceInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"BalanceInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/RekeningMutation",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"rekening mutation\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"from_date_mutation\" : \"2020-08-01\",\r\n    \"to_date_mutation\" : \"2020-09-14\",\r\n    \"pwd_tranx\" : \"Dandelion*01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/RekeningMutation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"RekeningMutation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"login\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"m_pin\" : \"777777\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/Verification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"verification\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"verify_code\" : \"blablabla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Verification",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Verification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/Activation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"activation\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"dc_number\" : \"1234567890000000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Activation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Activation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/OTPActivation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"otp activation\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"otp\" : \"blabla\",\r\n    \"m_pin\" : \"777777\",\r\n    \"pwd_tranx\" : \"Dandelion*07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/OTPActivation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"OTPActivation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/Insurance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"insurance\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"insurance\" : \"Allianz\",\r\n    \"polis_number\" : \"7777777777\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Insurance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Insurance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/InsurancePayment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"insurance payment\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"insurance\" : \"Allianz\",\r\n    \"polis_number\" : \"7777777777\",\r\n    \"nominal_transfer\" : 50000,\r\n    \"pwd_tranx\" : \"*Dandelion07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/InsurancePayment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"InsurancePayment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/SeeProfile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"see profile\",\r\n    \"user_id\" : \"dandelion7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/SeeProfile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"SeeProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/ChangePwdTranx",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"change pwd tranx\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"currently_pwd_tranx\" : \"*Dandelion07\",\r\n    \"new_pwd_tranx\" : \"*Dandelion01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/ChangePwdTranx",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"ChangePwdTranx"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/ChangeMPIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"change m pin\",\r\n    \"user_id\" : \"dandelion7\",\r\n    \"currently_m_pin\" : \"777777\",\r\n    \"new_m_pin\" : \"007007\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/ChangeMPIN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"ChangeMPIN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/MBanking/Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activity\" : \"register\",\r\n    \"rekening_number\" : \"1111222233\",\r\n    \"pin_atm\" : \"123456\",\r\n    \"email\" : \"dandelion001@gmail.com\",\r\n    \"birth_date\" : \"1990-08-17\",\r\n    \"nik\" : \"1050241708900001\",\r\n    \"user_id\" : \"dandelion7\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/MBanking/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"MBanking",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
